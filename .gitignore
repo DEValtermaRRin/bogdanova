@@ -1,1 +1,7 @@
-./info
+/node_modules
+/.vscode
+/.idea
+/dist
+/*.zip
+/gulp
+/info
