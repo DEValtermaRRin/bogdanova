@@ -1,0 +1,19 @@
+body {
+  background-color: $mainBackground;
+  @include roboto(400, 14px);
+}
+
+.hidden{
+  display: none;
+}
+
+.gray-picture{
+  transition: filter 0.7s ease-in-out;
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(90%);
+
+  &:hover{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
+}
