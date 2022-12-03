@@ -1,3 +1,97 @@
 .header {
   grid-area: header;
+  background: #0d0d0d;
+  box-shadow: 0px 5px 22px rgba(0, 0, 0, 0.25);
+  &__navigation {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+.nav-links {
+  font-size: 11px;
+  line-height: 13px;
+  text-transform: uppercase;
+  height: 100%;
+  display: flex;
+justify-content: space-between;
+  align-items: center;
+  position: relative;
+  &__link{
+  }
+  &__link:hover {
+    transition: 0.7s ease-in-out;
+    background-color: $blueColor;
+  }
+  &:nth-child(2) {
+    margin-left: 90px;
+  }
+}
+.nav-link {
+  display: inline-block;
+  padding: 15px 17px;
+  color: $mainTextColor;
+
+  &__drop {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+.articles-menu {
+  height: 100%;
+  position: relative;
+  &__links {
+    width: 165px;
+    position: absolute;
+    top: 43px;
+    left: 0;
+    z-index: 2;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+
+  }
+
+  &__link {
+    background: $blueColor;
+  }
+  &__link:last-child{
+    border-radius: 0px 0px 5px 5px;
+  }
+  &[open] {
+    background-color: $blueColor;
+
+  }
+  &[open] .nav-link__drop::after{
+    content: '';
+    display: inline-block;
+    margin-left: 5px;
+    width: 10px;
+    height: 6px;
+    background: url('../img/icons/arrow-down.svg') no-repeat;
+  }
+  &[open] .nav-link__drop{
+    // padding-left: 13px;
+    padding-right: 5px;
+  }
+}
+
+.input-nav-link{
+  height: 40px;
+  background: #202020;
+  box-shadow: -7px 1px 10px rgba(0, 0, 0, 0.3);
+  padding-left: 10px;
+  @include roboto(400, 14px);
+  line-height: 14px;
+  color: $mainTextColor;
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header-screen {
+    display: none;
+  }
 }
