@@ -67,8 +67,8 @@
     background: url("../img/icons/arrow-down.svg") no-repeat;
   }
   &[open] .nav-link__drop {
-    // padding-left: 13px;
     padding-right: 5px;
+    padding-left: 11px;
   }
 }
 

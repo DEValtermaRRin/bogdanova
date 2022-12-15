@@ -1,0 +1,54 @@
+.slider {
+  &__grid {
+  }
+}
+.slider-grid {
+  display: grid;
+  grid-template: 195px / repeat(4, 140px);
+  gap: 13px;
+
+  &__item {
+  }
+}
+.slider-grid-item {
+  color: #fff;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  position: relative;
+  padding: 0px 0px 85% 0px;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0) 52.08%,
+      rgba(0, 0, 0, 0.406154) 76.41%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url(.jpg);
+  filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.2));
+  border-radius: 5px;
+  & img {
+    position: absolute;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 0.9;
+    z-index: 1;
+  }
+  &__before {
+    width: 115px;
+    position: absolute;
+    top: 14px;
+    left: 13px;
+    z-index: 2;
+  }
+  &__after {
+    position: absolute;
+    bottom: 14px;
+    right: 17px;
+    z-index: 2;
+  }
+}
