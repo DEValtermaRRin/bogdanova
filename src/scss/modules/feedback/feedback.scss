@@ -1,0 +1,49 @@
+.feedback {
+  width: 600px;
+  &__flex {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+  }
+
+  &__input {
+    background-color: inherit;
+    color: $mainTextColor;
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.4);
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+
+  &__file {
+    display: none;
+  }
+  &__file-label {
+    margin-right: -50%;
+    background: url("../img/icons/camera.svg") center no-repeat;
+    padding: 10px;
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #fff;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+  &__btn {
+    color: #fff;
+    background-color: $blueColor;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+  }
+}
+.main {
+  &__title {
+  }
+}

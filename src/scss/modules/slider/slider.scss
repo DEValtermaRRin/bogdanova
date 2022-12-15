@@ -7,14 +7,11 @@
   grid-template: 195px / repeat(4, 140px);
   gap: 13px;
 
-  &__item {
-  }
 }
 .slider-grid-item {
   color: #fff;
-  font-size: 12px;
+  @include lato(400, 12px);
   line-height: 14px;
-  font-weight: 400;
   position: relative;
   padding: 0px 0px 85% 0px;
   background: linear-gradient(
@@ -47,6 +44,7 @@
   }
   &__after {
     position: absolute;
+    text-transform: uppercase;
     bottom: 14px;
     right: 17px;
     z-index: 2;
