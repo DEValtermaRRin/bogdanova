@@ -5,11 +5,6 @@
 margin-top: 25px;
   }
 }
-.main {
-
-  &__item {
-  }
-}
 
 .video-wrapper{
   width: 550px;
@@ -26,8 +21,5 @@ margin-top: 25px;
   & iframe{
     position: absolute;
     z-index: -1;
-
   }
-
-
 }
