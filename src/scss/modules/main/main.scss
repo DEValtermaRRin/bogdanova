@@ -1,8 +1,6 @@
 .main {
   grid-area: main;
-  min-height: 50vh;
-  max-width: 600px;
-  padding: 60px 50px 80px;
+  padding: 60px 50px 0;
 
   &__item {
     margin-top: 30px;

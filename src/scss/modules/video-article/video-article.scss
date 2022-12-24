@@ -1,0 +1,33 @@
+.video-article {
+  padding: 25px;
+
+  &__info {
+margin-top: 25px;
+  }
+}
+.main {
+
+  &__item {
+  }
+}
+
+.video-wrapper{
+  width: 550px;
+  height: 315px;
+  background: url('../img/notebook.png') 100%/cover no-repeat;
+  position: relative;
+  &__btn{
+    background-color: inherit;
+    position: absolute;
+    top: 37%;
+    left: 44%;
+  }
+
+  & iframe{
+    position: absolute;
+    z-index: -1;
+
+  }
+
+
+}
