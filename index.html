@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230109112935" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20230109112935">
+  <title>AltermaRRin</title>
+</head>
+
+<body>
+  <div class='wrapper'>
+    <header class='header header-screen'>
+  <nav class="header__navigation">
+    <ul class="nav-links">
+      <li class="nav-links__link ">
+        <a href="#" class="nav-link">Главная</a>
+      </li>
+      <li class="nav-links__link">
+        <details class='nav-link__articles articles-menu'>
+          <summary class='nav-link nav-link__drop'>
+            Статьи
+          </summary>
+          <ul class="articles-menu__links ">
+            <li class="articles-menu__link gray-picture">
+              <a class='nav-link gray-picture' href="#">Создание сайтов</a>
+            </li>
+            <li class="articles-menu__link gray-picture">
+              <a class='nav-link' href="#">Интернет-маркетинг</a>
+            </li>
+            <li class="articles-menu__link gray-picture">
+              <a class='nav-link' href="#">Продвижение видео</a>
+            </li>
+          </ul>
+        </details>
+      </li>
+      <li class="nav-links__link">
+        <a class='nav-link' href="#">Обо&nbsp;мне </a>
+      </li>
+      <li class="nav-links__link">
+        <a class='nav-link' href="#">Реклама</a>
+      </li>
+    </ul>
+    <ul class="nav-links">
+      <li class="nav-links__link">
+        <a class='nav-link' href="#">Профиль</a>
+      </li>
+      <li class="nav-links__input">
+        <input class='input-nav-link' type="text" placeholder='Поиск по сайту'>
+      </li>
+    </ul>
+  </nav>
+</header>
+<header class='header header-mobile '>
+  <menu class='header-mobile__menu'>
+    <ul class='header-mobile__list'>
+      <li class='nav-links__menu burger-menu'>
+        <details class='burger-menu__drop'>
+          <summary class='burger-menu__icon'>
+            <span class="burger-menu__icon-item"></span>
+          </summary>
+
+          <div class="burger-menu__info">
+            <div class="burger-menu__main-img">
+              <picture><source srcset="img/main-photo/bg.webp" type="image/webp"><img src="img/main-photo/bg.jpg" alt=""></picture>
+            </div>
+            <div class="burger-menu__photo">
+              <picture><source srcset="img/main-photo/altermarrin_small.webp" type="image/webp"><img src="img/main-photo/altermarrin_small.jpg" alt=""></picture>
+            </div>
+            <div class="burger-menu__about burger-menu-about">
+              <h2 class="burger-menu-about__title">Марина Богданова</h2>
+              <p class="burger-menu-about__info">front-end разработчик</p>
+            </div>
+          </div>
+          <ul class="burger-menu__list burger-menu-list">
+            <li class="burger-menu-list__item burger-menu-item">
+              <details class='burger-menu-item__dropdown dropdown-burger-menu'>
+                <summary class='dropdown-burger-menu__title'>Статьи</summary>
+                <ul class="dropdown-burger-menu__list">
+                  <li class="dropdown-burger-menu__item"><a href="#" class="dropdown-burger-menu__link">Создание
+                      сайтов</a></li>
+                  <li class="dropdown-burger-menu__item"><a href="#"
+                      class="dropdown-burger-menu__link">Интернет-маркетинг</a></li>
+                  <li class="dropdown-burger-menu__item"><a href="#" class="dropdown-burger-menu__link">Продвижение
+                      видео</a></li>
+
+                </ul>
+              </details>
+
+            </li>
+            <li class="burger-menu-list__item burger-menu-item"><a href="#" class="burger-menu-item__link">Обо мне</a>
+            </li>
+            <li class="burger-menu-list__item burger-menu-item"><a href="#" class="burger-menu-item__link">реклама</a>
+            </li>
+            <li class="burger-menu-list__item burger-menu-item"><a href="#" class="burger-menu-item__link">профиль</a>
+            </li>
+          </ul>
+          <div class="burger-menu__links">
+            <div class="aside-article__links">
+              <a href='#' class="aside-article__link aside-article__link__red  gray-picture">Мои работы</a>
+              <a href='#' class="aside-article__link aside-article__link__blue  gray-picture">Написать мне</a>
+            </div>
+          </div>
+
+        </details>
+      </li>
+      <li class="nav-links__input">
+        <input class='input-nav-link' type="text" placeholder='Поиск по сайту'>
+      </li>
+    </ul>
+  </menu>
+
+</header>
+    <main class='main'>
+      <section class="slider swiper">
+  <div class="slider__grid slider-grid swiper-wrapper">
+    <div class="  slider-grid__item slider-grid-item swiper-slide">
+      <p class="slider-grid-item__before">Отдыхаю на природе</p>
+      <picture><source srcset="../img/photo_1.webp" type="image/webp"><img src="../img/photo_1.png" alt="Отдыхаю на природе"></picture>
+      <p class="slider-grid-item__after">21.09.2020</p>
+    </div>
+    <div class=" slider-grid__item slider-grid-item swiper-slide">
+      <p class="slider-grid-item__before">Заканчиваю
+        сложный проект</p>
+      <img src="../img/photo_2.png" alt="Заканчиваю
+      сложный проект">
+      <p class="slider-grid-item__after">15.09.2020</p>
+    </div>
+    <div class="  slider-grid__item slider-grid-item swiper-slide">
+      <p class="slider-grid-item__before">Переехал в новую
+        квартиру</p>
+      <img src="../img/photo_3.png" alt="Переехал в новую
+      квартиру">
+      <p class="slider-grid-item__after">11.09.2020</p>
+    </div>
+    <div class="  slider-grid__item slider-grid-item swiper-slide">
+      <p class="slider-grid-item__before">Осень пришла!</p>
+      <picture><source srcset="../img/photo_4.webp" type="image/webp"><img src="../img/photo_4.png" alt="Осень пришла!"></picture>
+      <p class="slider-grid-item__after">28.08.2020</p>
+    </div>
+  </div>
+
+</section>
+      <form action="#" class="feedback main__item">
+  <div class="feedback__flex">
+    <input type="text" class="feedback__input" placeholder='Напишите что-нибудь' />
+    <label for="input-file" class="feedback__file-label" title='Загрузить фотографию'>
+      <input type="file" class="feedback__file" id='input-file' />
+    </label>
+    <button type="submit" class='feedback__btn'>
+      <img src="../img/icons/send.svg" alt="">
+    </button>
+  </div>
+</form>
+      <section class="note main__item">
+  <div class="note__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</div>
+  <div class="date date__mt">21.06.2020</div>
+</section>
+      <article class="to-read main__item">
+        <div class="to-read-slider swiper">
+          <div class="to-read-slider__wrapper swiper-wrapper">
+            <div class="to-read-slider__slide swiper-slide">
+              <div class="to-read-slider__image">
+                <picture><source srcset="img/bear.webp" type="image/webp"><img src="img/bear.jpg" alt="bear" /></picture>
+              </div>
+            </div>
+            <div class="to-read-slider__slide swiper-slide">
+              <div class="to-read-slider__image">
+                <picture><source srcset="img/phone.webp" type="image/webp"><img src="img/phone.jpg" alt='phone' /></picture>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="to-read__info">
+          <h3 class="to-read__title">Как писать код быстро и безболезненно?</h3>
+          <p class="to-read__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci
+            turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu
+            egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel
+            volutpat.</p>
+          <div class="article-bottom">
+            <div class="article-bottom__flex">
+              <div class="article-bottom__left-part">
+                <date class="date">21.06.2020</date>
+                <span class="dott"></span>
+                <div class="article-bottom__category">создание сайтов</div>
+              </div>
+              <div class="article-bottom__right-part">
+                <a href="#" class="article-bottom__link">читать</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </article>
+      <article class="video-article main__item">
+  <div class="video-wrapper">
+    <button class='video-wrapper__btn' type='button'><img src="img/icons/video-arrow.svg" alt=""></button>
+    <iframe  src="https://www.youtube.com/embed/oWlwQf9UlyM?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+  </div>
+
+  <div class="video-article__info">
+    <h3 class="to-read__title">Купил новый ноутбук за 150 000 руб</h3>
+    <div class="article-bottom">
+      <div class="article-bottom__flex">
+        <div class="article-bottom__left-part">
+          <date class="date">21.06.2020</date>
+          <span class="dott"></span>
+          <div class="article-bottom__category">продвижение видео</div>
+        </div>
+        <div class="article-bottom__right-part">
+          <a href=# class="article-bottom__link">оставить комментарий</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+<script>
+
+</script>
+      <article class="to-read main__item">
+        <div class="to-read-slider__image">
+          <picture><source srcset="img/conferention.webp" type="image/webp"><img src="img/conferention.jpg" alt="bear" /></picture>
+        </div>
+        <div class="to-read__info">
+          <h3 class="to-read__title">Как я сходил на FrontEnd Conf 2021</h3>
+          <p class="to-read__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci
+            turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu
+            egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel
+            volutpat.</p>
+          <div class="article-bottom">
+            <div class="article-bottom__flex">
+              <div class="article-bottom__left-part">
+                <date class="date">21.06.2020</date>
+                <span class="dott"></span>
+                <div class="article-bottom__category">создание сайтов</div>
+              </div>
+              <div class="article-bottom__right-part">
+                <a href="#" class="article-bottom__link">читать</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article> -->
+      <div class="pagination">
+  <div class="pagination__flex">
+    <div class="pagination__item"><</div>
+    <div class="pagination__item">1</div>
+    <div class="pagination__item">2</div>
+    <div class="pagination__item">3</div>
+    <div class="pagination__item">></div>
+  </div>
+</div>
+
+    </main>
+    <footer class='footer'></footer>
+    <aside class='aside'>
+  <header class="aside-header">
+    <div class="aside-header__images images-aside">
+      <div class="images-aside__bg">
+        <picture><source srcset="img/main-photo/bg.webp" type="image/webp"><img src="img/main-photo/bg.jpg" alt="background-image"></picture>
+      </div>
+      <div class="images-aside__photo">
+        <picture><source srcset="img/main-photo/altermarrin_small.webp" type="image/webp"><img src="img/main-photo/altermarrin_small.jpg" alt="it's me"></picture>
+      </div>
+    </div>
+  </header>
+  <article class='aside-article'>
+    <div class="aside-article__title">
+      <h1 class="aside-article__name">Марина Богданова<span class="aside-article__info">front-end разработчик</span>
+      </h1>
+
+    </div>
+    <div class="aside-article__socials socials">
+      <ul class='socials__items'>
+        <li class="socials__item insta gray-picture">
+          <a href="#" class="socials__link">
+            <img src="img/icons/instagramm.svg" alt="">
+          </a>
+        </li>
+        <li class="socials__item vk  gray-picture">
+          <a href="#" class="socials__link">
+            <img src="img/icons/vk.svg" alt="">
+          </a>
+        </li>
+        <li class="socials__item pinterest  gray-picture">
+          <a href="#" class="socials__link">
+            <img src="img/icons/pinterest.svg" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="aside-article__about about-aside">
+      <div class="about-aside__about">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo a pariatur molestiae quasi inventore totam temporibus veniam dolor est quidem expedita delectus assumenda magni adipisci architecto distinctio alias perspiciatis dolore laborum reprehenderit perferendis reiciendis, neque laudantium fugit. Soluta, nam ea.</p>
+      </div>
+    </div>
+    <div class="aside-article__links">
+      <a href='#' class="aside-article__link aside-article__link__red  gray-picture">Мои работы</a>
+      <a href='#' class="aside-article__link aside-article__link__blue  gray-picture">Написать мне</a>
+    </div>
+  </article>
+</aside>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230109112935"></script>
+  <script src="js/app.min.js?_v=20230109112935" defer></script>
+</body>
+
+</html>
