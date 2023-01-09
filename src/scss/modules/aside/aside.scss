@@ -1,0 +1,167 @@
+.aside {
+  grid-area: aside;
+  max-width: 300px;
+height: calc(100% - 40px);
+  background-color: #202020;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.images-aside {
+  &__bg {
+    position: relative;
+    padding: 0 0 60% 0;
+  }
+  &__bg img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__photo {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #fff;
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.25);
+    margin: -50px auto 0;
+  }
+
+  &__photo img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+.aside-article {
+  padding: 0 20px;
+  &__title {
+    margin-top: 20px;
+  }
+
+  &__name {
+    font-size: 18px;
+    line-height: 21px;
+    color: $mainTextColor;
+    text-align: center;
+  }
+
+  &__info {
+    margin-top: 3px;
+    display: block;
+    @include roboto(300, 14px);
+    line-height: 16px;
+    text-align: center;
+    color: #dedede;
+  }
+
+  &__socials {
+    margin: 17px auto 0;
+  }
+
+  &__links {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 13px 20px;
+    color: $mainTextColor;
+    @include roboto(500, 12px);
+    line-height: 14px;
+    text-align: center;
+    border-radius: 25px;
+    &__red {
+      box-shadow: 0px 7px 17px -10px rgba(242, 63, 63, 0.2);
+      background: #ed3024;
+    }
+    &__blue {
+      box-shadow: 0px 7px 17px -10px rgba(32, 84, 219, 0.35);
+      background: $blueColor;
+    }
+  }
+
+  &__about {
+    margin-top: 30px;
+  }
+}
+.socials {
+  width: 105px;
+  &__items {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+
+  &__item {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
+
+  &__link {
+    position: relative;
+    padding: 0px 0px 85% 0px;
+  }
+  &__link img {
+    position: absolute;
+    object-fit: cover;
+  }
+}
+
+.insta {
+  border-radius: 6px;
+  background: linear-gradient(49.12deg, #8e7f42 6.62%, #ff543e 50.06%, #c837ab 93.5%);
+
+  & img {
+    top: 3px;
+    left: 3px;
+  }
+}
+
+.vk {
+  background: #4d76a1;
+
+  & img {
+    top: 8px;
+    left: 3px;
+  }
+}
+
+.pinterest {
+  background: #cb2027;
+  & img {
+    top: 4px;
+    left: 5px;
+  }
+}
+
+.about-aside {
+  &__about {
+    padding: 30px 0;
+    font-size: 12px;
+    line-height: 150%;
+    color: $mainTextColor;
+    text-align: center;
+    border-top: 1px solid #1c1c1c;
+    border-bottom: 1px solid #1c1c1c;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .aside {
+    display: none;
+  }
+}

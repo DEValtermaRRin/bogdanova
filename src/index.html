@@ -5,14 +5,91 @@
 })
 
 <body>
-<div class='wrapper'>
+  <div class='wrapper'>
     @@include('html/header.html',{})
-    <main>
+    <main class='main'>
+      @@include('html/slider.html', {})
+      @@include('html/feedback.html', {})
+      @@include('html/note.html', {})
+      <article class="to-read main__item">
+        <div class="to-read-slider swiper">
+          <div class="to-read-slider__wrapper swiper-wrapper">
+            <div class="to-read-slider__slide swiper-slide">
+              <div class="to-read-slider__image">
+                <img src="@img/bear.jpg" alt="bear" />
+              </div>
+            </div>
+            <div class="to-read-slider__slide swiper-slide">
+              <div class="to-read-slider__image">
+                <img src="@img/phone.jpg" alt='phone' />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="to-read__info">
+          <h3 class="to-read__title">Как писать код быстро и безболезненно?</h3>
+          <p class="to-read__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci
+            turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu
+            egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel
+            volutpat.</p>
+          <div class="article-bottom">
+            <div class="article-bottom__flex">
+              <div class="article-bottom__left-part">
+                <date class="date">21.06.2020</date>
+                <span class="dott"></span>
+                <div class="article-bottom__category">создание сайтов</div>
+              </div>
+              <div class="article-bottom__right-part">
+                <a href="#" class="article-bottom__link">читать</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </article>
+      @@include('html/video-article.html', {
+
+      "title":"Купил новый ноутбук за 150 000 руб",
+
+      "date":"21.06.2020",
+      "category":"продвижение видео",
+      "link":"оставить комментарий",
+      "link-to":"#"
+      })
+      <article class="to-read main__item">
+        <div class="to-read-slider__image">
+          <img src="@img/conferention.jpg" alt="bear" />
+        </div>
+        <div class="to-read__info">
+          <h3 class="to-read__title">Как я сходил на FrontEnd Conf 2021</h3>
+          <p class="to-read__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci
+            turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu
+            egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel
+            volutpat.</p>
+          <div class="article-bottom">
+            <div class="article-bottom__flex">
+              <div class="article-bottom__left-part">
+                <date class="date">21.06.2020</date>
+                <span class="dott"></span>
+                <div class="article-bottom__category">создание сайтов</div>
+              </div>
+              <div class="article-bottom__right-part">
+                <a href="#" class="article-bottom__link">читать</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article> -->
+      @@include('html/pagination.html',{})
 
     </main>
     @@include('html/footer.html',{})
-</div>
-  <script src="js/app.min.js"></script>
+    @@include('html/aside.html', {})
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/app.min.js" defer></script>
 </body>
 
 </html>

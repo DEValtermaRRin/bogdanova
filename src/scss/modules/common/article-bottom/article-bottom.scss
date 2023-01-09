@@ -1,0 +1,44 @@
+.article-bottom {
+  &__flex {
+    margin-top: 21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__left-part {
+    width: 195px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__category {
+    @include lato(400, 12px);
+    line-height: 14px;
+    color: #828282;
+  }
+
+  &__right-part {
+  }
+
+  &__link {
+    @include roboto(400, 14px);
+    line-height: 16px;
+    text-align: right;
+    color: #107eff;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .article-bottom{
+    &__flex{
+      gap: 20px;
+    }
+    &__link {
+      // margin-left: 10px;
+      line-height: 15px;
+    }
+  }
+}
