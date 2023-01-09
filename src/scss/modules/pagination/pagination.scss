@@ -1,0 +1,29 @@
+.pagination {
+  width: 240px;
+  margin: 0 auto;
+
+  &__flex {
+    margin-top: 40px;
+    display: flex;
+    gap: 10px;
+
+  }
+
+  &__item {
+    background-color: #0d0d0d;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    @include roboto(400, 14px);
+    line-height: 16px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    padding: 12px 16px;
+
+    &:hover{
+      background-color: $blueColor;
+      cursor: pointer;
+      transition: all  0.7s ease;
+    }
+  }
+}

@@ -9,3 +9,12 @@
     border-radius: 5px;
   }
 }
+
+@media screen and (max-width: 320px) {
+ .main{
+  &__item{
+    width: 290px;
+  }
+ }
+}
+

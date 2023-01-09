@@ -1,7 +1,9 @@
 // import Swiper from 'swiper';
+import { mainSlider } from './slider.js';
 
-// import 'swiper/css';
-new Swiper('.to-read-slider', {
+
+// import 'swiper/scss';
+const readSlider = new Swiper('.to-read-slider', {
 
   loop: true,
   pagination: {
@@ -23,3 +25,9 @@ document.querySelector('.video-wrapper__btn').addEventListener('click', (e) => {
   video.style.zIndex = 1
   video.src += 'autoplay=1'
 })
+
+mainSlider
+readSlider
+video
+
+

@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   &__left-part {
@@ -27,5 +28,17 @@
     line-height: 16px;
     text-align: right;
     color: #107eff;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .article-bottom{
+    &__flex{
+      gap: 20px;
+    }
+    &__link {
+      // margin-left: 10px;
+      line-height: 15px;
+    }
   }
 }

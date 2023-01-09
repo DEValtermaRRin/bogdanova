@@ -17,9 +17,28 @@ margin-top: 25px;
     top: 37%;
     left: 44%;
   }
-
   & iframe{
     position: absolute;
     z-index: -1;
+    width: 550px;
+    height: 315px;
   }
+}
+
+@media screen and (max-width: 320px) {
+  .video-article{
+    padding: 0;
+    &__info{
+      padding: 25px;
+    }
+  }
+  .video-wrapper{
+    width: 290px;
+    height: 205px;
+    & iframe{
+      width: 290px;
+      height: 205px;
+    }
+  }
+
 }

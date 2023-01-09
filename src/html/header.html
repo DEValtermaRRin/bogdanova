@@ -34,9 +34,68 @@
         <a class='nav-link' href="#">Профиль</a>
       </li>
       <li class="nav-links__input">
-       <input class='input-nav-link' type="text" placeholder='Поиск по сайту'>
+        <input class='input-nav-link' type="text" placeholder='Поиск по сайту'>
       </li>
     </ul>
   </nav>
 </header>
-<header class='header header-mobile hidden'></header>
+<header class='header header-mobile '>
+  <menu class='header-mobile__menu'>
+    <ul class='header-mobile__list'>
+      <li class='nav-links__menu burger-menu'>
+        <details class='burger-menu__drop'>
+          <summary class='burger-menu__icon'>
+            <span class="burger-menu__icon-item"></span>
+          </summary>
+
+          <div class="burger-menu__info">
+            <div class="burger-menu__main-img">
+              <img src="@img/main-photo/bg.jpg" alt="">
+            </div>
+            <div class="burger-menu__photo">
+              <img src="@img/main-photo/altermarrin_small.jpg" alt="">
+            </div>
+            <div class="burger-menu__about burger-menu-about">
+              <h2 class="burger-menu-about__title">Марина Богданова</h2>
+              <p class="burger-menu-about__info">front-end разработчик</p>
+            </div>
+          </div>
+          <ul class="burger-menu__list burger-menu-list">
+            <li class="burger-menu-list__item burger-menu-item">
+              <details class='burger-menu-item__dropdown dropdown-burger-menu'>
+                <summary class='dropdown-burger-menu__title'>Статьи</summary>
+                <ul class="dropdown-burger-menu__list">
+                  <li class="dropdown-burger-menu__item"><a href="#" class="dropdown-burger-menu__link">Создание
+                      сайтов</a></li>
+                  <li class="dropdown-burger-menu__item"><a href="#"
+                      class="dropdown-burger-menu__link">Интернет-маркетинг</a></li>
+                  <li class="dropdown-burger-menu__item"><a href="#" class="dropdown-burger-menu__link">Продвижение
+                      видео</a></li>
+
+                </ul>
+              </details>
+
+            </li>
+            <li class="burger-menu-list__item burger-menu-item"><a href="#" class="burger-menu-item__link">Обо мне</a>
+            </li>
+            <li class="burger-menu-list__item burger-menu-item"><a href="#" class="burger-menu-item__link">реклама</a>
+            </li>
+            <li class="burger-menu-list__item burger-menu-item"><a href="#" class="burger-menu-item__link">профиль</a>
+            </li>
+          </ul>
+          <div class="burger-menu__links">
+            <div class="aside-article__links">
+              <a href='#' class="aside-article__link aside-article__link__red  gray-picture">Мои работы</a>
+              <a href='#' class="aside-article__link aside-article__link__blue  gray-picture">Написать мне</a>
+            </div>
+          </div>
+
+        </details>
+      </li>
+      <li class="nav-links__input">
+        <input class='input-nav-link' type="text" placeholder='Поиск по сайту'>
+      </li>
+    </ul>
+  </menu>
+
+</header>
