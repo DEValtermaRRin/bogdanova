@@ -180,12 +180,6 @@
     }
   }
 
-  &__about {
-  }
-
-  &__list {
-  }
-
   &__links {
     margin-left: 20px;
     padding-bottom: 15px;
@@ -236,18 +230,8 @@
   &:active {
     color: $blueColor;
   }
-  &__dropdown {
-  }
-
-  &__link {
-  }
 }
 .dropdown-burger-menu {
-  &__title {
-  }
-
-  &__list {
-  }
 
   &__item {
     @include roboto(300, 15px);
@@ -263,9 +247,6 @@
     &:active .dropdown-burger-menu__title:active {
       color: #fff;
     }
-  }
-
-  &__link {
   }
 }
 
