@@ -9,10 +9,10 @@
   'aside footer';
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 780px) {
   .wrapper {
     padding: 0;
-    width: calc($minPageWidth + 10px);
+    width: calc(100vw - 10px);
     grid-template: 40px 1fr 40px / 1fr ;
     grid-template-areas:
     'header'
