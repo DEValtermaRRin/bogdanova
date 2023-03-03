@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230203224152" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20230203224152">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230303130527" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20230303130527">
   <title>AltermaRRin: my_works</title>
 </head>
 
@@ -113,52 +113,20 @@
 
 </header>
   <main class="main">
-    <article class="work main__item">
-  <div class="work__flex">
-    <div class="work__imgbtn">
-      <div class="work__image">
-        <img src=img/works/iherb.png alt=iHerb title=iHerb />
-      </div>
-      <div class="work__link gray-picture"><a href=https://DEValtermaRRin.github.io/iherb target='_blank'>Перейти на сайт</a></div>
-    </div>
-    <div class="work__info info-work">
-      <div class="info-work__title">iHerb</div>
-      <div class="info-work__dscrpt">Доставка iHerb в Россию</div>
-      <div class="info-work__tegs tegs">
-        <div class="tegs__flex">
-          <div class="tegs__teg">дизайн</div>
-          <div class="tegs__teg">создание сайта</div>
-          <div class="tegs__teg">SMM</div>
-        </div>
-      </div>
+    <div class="main__posts">
 
     </div>
+    <div class="pagination">
+  <div class="pagination__flex">
+    <div class="pagination__item" id='item-before'><</div>
+    <ul class="pagination__numbers"></ul>
+    <div class="pagination__item" id='item-after'>></div>
   </div>
-</article>
-    <article class="work main__item">
-  <div class="work__flex">
-    <div class="work__imgbtn">
-      <div class="work__image">
-        <img src=img/works/shop.png alt=Fashion title=Fashion />
-      </div>
-      <div class="work__link gray-picture"><a href=https://devaltermarrin.github.io/shop/ target='_blank'>Перейти на сайт</a></div>
-    </div>
-    <div class="work__info info-work">
-      <div class="info-work__title">Luxerious Fashion</div>
-      <div class="info-work__dscrpt">Интернет-магазин одежды</div>
-      <div class="info-work__tegs tegs">
-        <div class="tegs__flex">
-          <div class="tegs__teg">дизайн</div>
-          <div class="tegs__teg">создание сайта</div>
-          <div class="tegs__teg">SMM</div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</article>
+</div>
   </main>
-  <footer class='footer'></footer>
+  <footer class='footer'>
+
+</footer>
   <aside class='aside'>
   <header class="aside-header">
     <div class="aside-header__images images-aside">
@@ -178,12 +146,12 @@
     </div>
     <div class="aside-article__socials socials">
       <ul class='socials__items'>
-        <li class="socials__item insta gray-picture">
-          <a href="#" class="socials__link">
-            <img src="img/icons/instagramm.svg" alt="">
+        <li class="socials__item github gray-picture">
+          <a target='_blank' href="https://github.com/DEValtermaRRin/" class="socials__link">
+            <img src="img/icons/github.svg" alt="GitHub" />
           </a>
         </li>
-        <li class="socials__item vk  gray-picture">
+        <li class="socials__item vk gray-picture">
           <a href="#" class="socials__link">
             <img src="img/icons/vk.svg" alt="">
           </a>
@@ -197,7 +165,7 @@
     </div>
     <div class="aside-article__about about-aside">
       <div class="about-aside__about">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo a pariatur molestiae quasi inventore totam temporibus veniam dolor est quidem expedita delectus assumenda magni adipisci architecto distinctio alias perspiciatis dolore laborum reprehenderit perferendis reiciendis, neque laudantium fugit. Soluta, nam ea.</p>
+        <p>Веб-разработчик с большим опытом в HTML5, CSS3, SASS, Figma, GULP, JavaScript, TypeScript, React, webpack, Babel, Eslint, Node.js, npm, GitHub и процессах разработки веб-сайтов. Активно изучаю mongoDB, Jest, Wordpress и Redux. Обладаю опытом разработки сложных проектов с множеством функций. Люблю принимать новые вызовы и работать над интересными задачами. Готова применять знания и навыки для успешной работы.</p>
       </div>
     </div>
     <div class="aside-article__links">
@@ -207,6 +175,27 @@
   </article>
 </aside>
 </div>
+<template class='template-post'>
+  <article class="work main__item">
+    <div class="work__flex">
+      <div class="work__imgbtn">
+        <div class="work__image">
+          <img src='' alt='' title='' />
+        </div>
+        <div class="work__link gray-picture"><a href='#' target='_blank'>Перейти на сайт</a></div>
+      </div>
+      <div class="work__info info-work">
+        <div class="info-work__title"></div>
+        <div class="info-work__dscrpt"></div>
+        <div class="info-work__tags tags">
+          <div class="tags__flex"></div>
+        </div>
+
+      </div>
+    </div>
+  </article>
+</template>
+<script src="js/app.min.js?_v=20230303130527" defer></script>
 </body>
 
 </html>
