@@ -1,3 +1,5 @@
+import { Swiper } from 'swiper';
+
 export const mainSlider = new Swiper('.slider', {
   slidesPerView: 5,
   spaceBetween: 14,
@@ -6,6 +8,6 @@ export const mainSlider = new Swiper('.slider', {
   breakpoints: {
     320: {
       slidesPerView: 2,
-    }
-  }
-})
+    },
+  },
+});

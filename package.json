@@ -11,13 +11,17 @@
     "zip": "gulp deployZIP --build",
     "deploy": "gulp deployFTP --build",
     "svgSprites": "gulp svgSprites",
-    "deploy:github": "npm run build && gh-pages -d dist"
+    "deploy:github": "npm run build && gh-pages -d dist",
+    "lint": "npx eslint . --fix"
   },
   "author": "AltermaRRin",
   "license": "ISC",
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
     "browser-sync": "latest",
     "del": "latest",
+    "eslint": "^8.35.0",
+    "eslint-config-airbnb-base": "^15.0.0",
     "gulp": "latest",
     "gulp-autoprefixer": "latest",
     "gulp-clean-css": "latest",
@@ -42,13 +46,13 @@
     "gulp-webpcss": "latest",
     "gulp-zip": "latest",
     "sass": "latest",
-    "swiper": "latest",
     "vinyl-ftp": "latest",
     "webp-converter": "2.2.3",
     "webpack": "latest",
     "webpack-stream": "latest"
   },
   "dependencies": {
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^4.0.0",
+    "swiper": "^9.0.5"
   }
 }

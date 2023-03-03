@@ -8,24 +8,35 @@
 <div class="wrapper">
   @@include('html/header.html',{})
   <main class="main">
-    @@include('html/myWork.html', {
-      "name":"iHerb",
-      "imgSrc": "@img/works/iherb.png",
-      "imgAlt": "iHerb",
-      "about":"Доставка iHerb в Россию",
-      "link":"https://DEValtermaRRin.github.io/iherb"
-    })
-    @@include('html/myWork.html', {
-      "name":"Luxerious Fashion",
-      "imgSrc": "@img/works/shop.png",
-      "imgAlt": "Fashion",
-      "about":"Интернет-магазин одежды",
-      "link":"https://devaltermarrin.github.io/shop/"
-    })
+    <div class="main__posts">
+
+    </div>
+    @@include('html/pagination.html')
   </main>
   @@include('html/footer.html',{})
   @@include('html/aside.html', {})
 </div>
+<template class='template-post'>
+  <article class="work main__item">
+    <div class="work__flex">
+      <div class="work__imgbtn">
+        <div class="work__image">
+          <img src='' alt='' title='' />
+        </div>
+        <div class="work__link gray-picture"><a href='#' target='_blank'>Перейти на сайт</a></div>
+      </div>
+      <div class="work__info info-work">
+        <div class="info-work__title"></div>
+        <div class="info-work__dscrpt"></div>
+        <div class="info-work__tags tags">
+          <div class="tags__flex"></div>
+        </div>
+
+      </div>
+    </div>
+  </article>
+</template>
+<script src="js/app.min.js" defer></script>
 </body>
 
 </html>
