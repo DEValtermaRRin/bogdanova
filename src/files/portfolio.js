@@ -16,14 +16,15 @@ export const DATA = [
     tags: ['адаптивный сайт', 'создание сайта', 'микроанимация', 'семантические теги'],
   },
 
-  // {
-  //   name: 'chat',
-  //   imgSrc: './img/works/shop.png',
-  //   imgAlt: 'chat',
-  //  about: 'Реализация чата с авторизацией,
-  //   link: 'https://devaltermarrin.github.io/shop/',
-  //   tags: ['React', 'JS', 'SPA'],
-  // },
+  {
+    name: 'news',
+    imgSrc: './img/works/news.png',
+    imgAlt: 'news',
+   about: 'Новостной сайт',
+    link: 'https://devaltermarrin.github.io/site-tailwindCSS/',
+    tags: ['TailwindCss', 'CSS', 'адаптивный сайт', 'микроанимация'],
+  },
+
   {
     name: 'Snake game',
     imgSrc: './img/works/snake-game.png',
