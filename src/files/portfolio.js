@@ -20,7 +20,7 @@ export const DATA = [
     name: 'news',
     imgSrc: './img/works/news.png',
     imgAlt: 'news',
-   about: 'Новостной сайт',
+    about: 'Новостной сайт',
     link: 'https://devaltermarrin.github.io/site-tailwindCSS/',
     tags: ['TailwindCss', 'CSS', 'адаптивный сайт', 'микроанимация'],
   },
